@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>jquery.fix.js</title>
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <script src="js/modernizr.min.js"></script>
+</head>
+
+<body>
+  <div>
+    <header>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#howto">How To</a>
+        <a href="#thecode">The Code</a>
+      </nav>
+    </header>
+
+    <section>
+      <a name="about">
+      <h1>About</h1>
+    </section>
+    <section>
+      <a name="howto">
+      <h1>How To</h1>
+      <p>
+      <pre>
+&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+&lt;script src="js/jquery.ba-throttle-debounce.min.js"></script>
+&lt;script src="js/jquery.fix.js"></script>
+&lt;script src="hasPositionFixed/js/jquery.hasFixed.js"></script>
+&lt;script>
+  $.hasPositionFixed(function() {
+    $('nav').fix();
+  });
+&lt;/script>
+      </pre>
+    </section>
+    <section>
+      <a name="thecode">
+      <h1>The Code</h1>
+    </section>
+
+    <footer>
+      This is my footer.
+    </footer>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <script src="js/jquery.ba-throttle-debounce.min.js"></script>
+  <script src="js/jquery.fix.js"></script>
+  <script src="hasPositionFixed/js/jquery.hasFixed.js"></script>
+  <script>
+    $.hasPositionFixed(function() {
+      $('nav').fix();
+    });
+  </script>
+</body>
+</html>

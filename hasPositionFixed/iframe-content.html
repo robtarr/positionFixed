@@ -1,0 +1,39 @@
+<!doctype html>
+<body>  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <script>
+    (function($) {
+      $.extend({
+        testFixed: function() {
+
+          var $test = $('<div/>')
+              .css({
+                height: '10px',
+                width: '10px',
+                position: 'fixed',
+                top: 0
+              });
+
+          var $container = $('<div/>')
+              .css({
+                position: 'absolute',
+                left: '99px',
+                top: '99px',
+                width: '100px',
+                height: '9999px'
+              });
+
+          $('body').css('background', 'red').append($container.append($test));
+
+          $(document).scrollTop(2000);                      
+          parent.hasPositionFixed = $test.offset().top === 2000;
+          parent.$(parent.document).trigger('hasFixed?');
+          parent.cleanUpHasFixed();          
+        }
+      });
+    })(jQuery);
+
+    jQuery.testFixed();
+  </script>
+</body>
+</html>

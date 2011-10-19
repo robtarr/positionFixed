@@ -1,0 +1,31 @@
+body {
+  background: url(../img/noise_pattern_with_crosslines.png);
+  margin: 0;
+}
+nav {
+  background: #000;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+  nav a {
+    color: #fff;
+    padding: 15px;
+  }
+
+section {
+  height: 500px;
+  padding-left: 15px;
+}
+  section a {
+    display: block;
+    padding-top: 40px;
+  }
+  
+  section h1 {
+    background: rgba(0, 0, 0, .4);
+    color: #fff;
+    margin-left: -15px;
+    padding: 5px 15px;
+  }
